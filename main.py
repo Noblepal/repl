@@ -16,6 +16,8 @@ num_people = float(input("How many people split the bill? "))
 increment = percent / 100 * total
 grand_total = total + increment
 
-individual_amount = round(grand_total / num_people, 2)
+individual_amount = grand_total / num_people
+# Python format
+final_amount = "{:.2f}".format(individual_amount)
 
-print(f"Each person should pay: {individual_amount}")
+print(f"Each person should pay: {final_amount}")
