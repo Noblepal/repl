@@ -1,10 +1,19 @@
-# 🚨 Don't change the code below 👇
-height = input("enter your height in m: ")
-weight = input("enter your weight in kg: ")
-# 🚨 Don't change the code above 👆
+# Round numbers
+# round(number, decimal places)
 
-#Write your code below this line 👇
+print(round(8 / 3, 2))
 
-bmi = float(weight) / (float(height) ** 2)
+# Floor division
+print(8 // 3)
 
-print("Your BMI is: " + str(int(bmi)) )
+# Assign after operation
+result = 4 / 2
+result /= 2
+print(result)
+
+# F string
+score = 92
+height = 1.5
+isWinning = True
+
+print(f"Your score is: {score}, your height is {height} and you are winning: {isWinning}")
