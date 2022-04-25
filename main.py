@@ -1,19 +1,16 @@
-# 🚨 Don't change the code below 👇
-a = input("a: ")
-b = input("b: ")
-# 🚨 Don't change the code above 👆
+#1. Create a greeting for your program.
 
-####################################
-#Write your code below this line 👇
+#2. Ask the user for the city that they grew up in.
 
-temp = a
-a = b
-b = temp
+#3. Ask the user for the name of a pet.
 
+#4. Combine the name of their city and pet and show them their band name.
 
-#Write your code above this line 👆
-####################################
+#5. Make sure the input cursor shows on a new line, see the example at:
+#   https://replit.com/@appbrewery/band-name-generator-end
 
-# 🚨 Don't change the code below 👇
-print("a: " + a)
-print("b: " + b)
+print("Welcome to band name generator app")
+city = input("Which city did you grow up in?\n")
+pet = input("What's your pet's name?\n")
+
+print("Your band name is: " + city + " " + pet)
