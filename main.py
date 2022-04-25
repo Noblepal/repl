@@ -1,19 +1,18 @@
-# Round numbers
-# round(number, decimal places)
+# 🚨 Don't change the code below 👇
+age = input("What is your current age?")
+# 🚨 Don't change the code above 👆
 
-print(round(8 / 3, 2))
+#Write your code below this line 👇
 
-# Floor division
-print(8 // 3)
+# 365 days in a year
+# 52 weeks in a year
+# 12 months in a year
 
-# Assign after operation
-result = 4 / 2
-result /= 2
-print(result)
+years_remaining = 90 - int(age)
 
-# F string
-score = 92
-height = 1.5
-isWinning = True
+days = round(years_remaining * 365)
+weeks = round(years_remaining * 52)
+months = round(years_remaining * 12)
 
-print(f"Your score is: {score}, your height is {height} and you are winning: {isWinning}")
+message = f"You have {days} days, {weeks} weeks and {months} months left till 90yrs."
+print(message)
