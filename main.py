@@ -1,16 +1,13 @@
-#1. Create a greeting for your program.
+# num_char = len(input("What is your name?"))
 
-#2. Ask the user for the city that they grew up in.
+# #Type checking
+# print(type(num_char))
 
-#3. Ask the user for the name of a pet.
+# #Type conversion
+# str_num_char = str(num_char)
 
-#4. Combine the name of their city and pet and show them their band name.
+# print("Your name has "+ str_num_char + " characters")
 
-#5. Make sure the input cursor shows on a new line, see the example at:
-#   https://replit.com/@appbrewery/band-name-generator-end
-
-print("Welcome to band name generator app")
-city = input("Which city did you grow up in?\n")
-pet = input("What's your pet's name?\n")
-
-print("Your band name is: " + city + " " + pet)
+a = 123
+float_num  = float(a)
+print(float_num)
