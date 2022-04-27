@@ -1,29 +1,35 @@
-print("Welcome to the roller-coaster!")
-height = int(input("What is your height in cm? "))
-price = 0
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
 
-if height >= 120:
-    print("You can ride the roller-coaster!")
-    age = int(input("What is your age?"))
-    if age <= 12:
-        price = 5
-        print(f"Child tickets: ${price}")
-    elif age <= 18:
-        price = 7
-        print(f"Youth tickets: ${price}")
-    elif 45 <= age <= 55:
-        price = 0
-        print(f"Midlife crisis tickets: ${price}")
-    else:
-        price = 12
-        print(f"Adult tickets: ${price}")
+# Write your code below this line 👇
 
-    wants_photo = input("Do you want a photo taken? Y or N ")
+combined_names = name1 + name2
+combined_names = combined_names.lower()
 
-    if wants_photo == 'y':
-        price += 3
+t1 = combined_names.count("t")
+r1 = combined_names.count("r")
+u1 = combined_names.count("u")
+e1 = combined_names.count("e")
 
-    print(f"Your bill is: ${price}")
+true1 = t1 + r1 + u1 + e1
 
-else:
-    print("You are too short to ride the roller-coaster!")
+l2 = combined_names.count("l")
+o2 = combined_names.count("o")
+v2 = combined_names.count("v")
+ee2 = combined_names.count("e")
+
+love1 = l2 + o2 + v2 + ee2
+
+score_int = int(str(true1) + str(love1))
+
+message = ''
+
+if score_int < 10 or score_int > 90:
+    message = "you go together like coke and mentos"
+elif score_int >= 40 and score_int <= 50:  # Could be simplified to 40 <= score_int <= 50
+    message = "you are alright together"
+
+print(f"Your score is {score_int} {message}")
