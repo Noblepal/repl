@@ -1,28 +1,29 @@
-# 🚨 Don't change the code below 👇
-print("Welcome to Python Pizza Deliveries!")
-size = input("What size pizza do you want? S, M, or L ")
-add_pepperoni = input("Do you want pepperoni? Y or N ")
-extra_cheese = input("Do you want extra cheese? Y or N ")
-# 🚨 Don't change the code above 👆
-
-# Write your code below this line 👇
-
+print("Welcome to the roller-coaster!")
+height = int(input("What is your height in cm? "))
 price = 0
 
-if size == 's':
-    price += 15
-elif size == 'm':
-    price += 20
-else:
-    price += 25
-
-if add_pepperoni == 'y':
-    if size == 's':
-        price += 2
+if height >= 120:
+    print("You can ride the roller-coaster!")
+    age = int(input("What is your age?"))
+    if age <= 12:
+        price = 5
+        print(f"Child tickets: ${price}")
+    elif age <= 18:
+        price = 7
+        print(f"Youth tickets: ${price}")
+    elif 45 <= age <= 55:
+        price = 0
+        print(f"Midlife crisis tickets: ${price}")
     else:
+        price = 12
+        print(f"Adult tickets: ${price}")
+
+    wants_photo = input("Do you want a photo taken? Y or N ")
+
+    if wants_photo == 'y':
         price += 3
 
-if extra_cheese == 'y':
-    price += 1
+    print(f"Your bill is: ${price}")
 
-print(f"Your order is: ${price}")
+else:
+    print("You are too short to ride the roller-coaster!")
