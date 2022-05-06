@@ -1,8 +1,23 @@
-import random
+counties_in_kenya = [
+    "Nairobi",
+    "Nakuru",
+    "Mombasa",
+    "Kisumu"
+]
 
-random_number = random.randint(0, 1)
+# Final list
+print(f"Initial list: {counties_in_kenya}")
 
-if random_number == 1:
-    print("Heads")
-else:
-    print("Tails")
+print(f"First item: {counties_in_kenya[0]}")  # First item in the list
+print(f"Last item: {counties_in_kenya[-1]}")  # Last item in the list
+
+# Change an item
+counties_in_kenya[2] = "Machakos"
+print(f"Changed item: {counties_in_kenya[2]}")
+
+# Add to the list
+counties_in_kenya.append("Bungoma")
+print(f"Added item: {counties_in_kenya[-1]}")
+
+# Final list
+print(f"Final list: {counties_in_kenya}")
