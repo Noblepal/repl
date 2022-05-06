@@ -1,8 +1,17 @@
-# Nested lists
+# Nested lists exercise
 
-fruits = ["Strawberries", "Grapes"]
-vegetables = ["Potatoes", "Kale"]
+row1 = ["⬜", "⬜", "⬜"]
+row2 = ["⬜", "⬜", "⬜"]
+row3 = ["⬜", "⬜", "⬜"]
+row4 = ["⬜", "⬜", "⬜"]
+treasure_map = [row1, row2, row3, row4]
+print(f"{row1}\n{row2}\n{row3}\n{row4}")
+position = input("Where do you want to hide the treasure? ")
 
-dirty_dozens = [fruits, vegetables]
+# Add this to the selected position 🟥
+horiz = int(position[0]) - 1
+vert = int(position[1]) - 1
 
-print(dirty_dozens)
+treasure_map[vert][horiz] = "🟥"
+
+print(f"{row1}\n{row2}\n{row3}\n{row4}")
