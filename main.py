@@ -1,6 +1,8 @@
 import random
 
-random_integer = random.randint(0, 5)
+random_number = random.randint(0, 1)
 
-print(f"Random number: {random_integer}")
-print(f"Random floating point number: {random.random() * 5}")
+if random_number == 1:
+    print("Heads")
+else:
+    print("Tails")
