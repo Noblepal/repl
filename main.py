@@ -1,26 +1,20 @@
-print("Welcome to the roller-coaster!")
-height = int(input("What is your height in cm? "))
-price = 0
+# 🚨 Don't change the code below 👇
+student_heights = input("Input a list of student heights ").split(',')
+for n in range(0, len(student_heights)):
+    student_heights[n] = int(student_heights[n])
+print(student_heights)
+# 🚨 Don't change the code above 👆
 
-if height >= 120:
-    print("You can ride the roller-coaster!")
-    age = int(input("What is your age?"))
-    if age <= 12:
-        price = 5
-        print(f"Child tickets: ${price}")
-    elif age <= 18:
-        price = 7
-        print(f"Youth tickets: ${price}")
-    else:
-        price = 12
-        print(f"Adult tickets: ${price}")
+# Write your code below this row 👇
 
-    wants_photo = input("Do you want a photo taken? Y or N ")
+height_sum = 0
+for height in student_heights:
+    height_sum += height
 
-    if wants_photo == 'y':
-        price += 3
+students_count = 0
+for height in student_heights:
+    students_count += 1
 
-    print(f"Your bill is: ${price}")
+average = height_sum / students_count
 
-else:
-    print("You are too short to ride the roller-coaster!")
+print(f"The average height of the class is: {round(average)}")
