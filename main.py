@@ -1,28 +1,11 @@
-# Add all the numbers from 1 to 100
+# FizzBuzz
 
-# With step
-# for n in range(0, 11, 3):
-#     print(n)
-#
-# total = 0
-# for number in range(1, 101):
-#     total += number
-#
-# print(total)
-
-# Exercise adding even numbers in the range 1-100
-
-even_sum = 0
-for i in range(1, 101):
-    if i % 2 == 0:
-        even_sum += i
-
-print(even_sum)
-
-# OR - using step
-
-even_sum2 = 0
-for i in range(2, 101, 2):
-    even_sum2 += i
-
-print(even_sum2)
+for n in range(1, 101):
+    if n % 15 == 0:
+        print("FizzBuzz")
+    elif n % 5 == 0:
+        print("Buzz")
+    elif n % 3 == 0:
+        print("Fizz")
+    else:
+        print(n)
