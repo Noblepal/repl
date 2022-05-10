@@ -1,15 +1,28 @@
-# 🚨 Don't change the code below 👇
-student_scores = input("Input a list of student scores ").split(',')
-for n in range(0, len(student_scores)):
-    student_scores[n] = int(student_scores[n])
-print(student_scores)
-# 🚨 Don't change the code above 👆
+# Add all the numbers from 1 to 100
 
-# Write your code below this row 👇
+# With step
+# for n in range(0, 11, 3):
+#     print(n)
+#
+# total = 0
+# for number in range(1, 101):
+#     total += number
+#
+# print(total)
 
-highest_score = 0
-for score in student_scores:
-    if score > highest_score:
-        highest_score = score
+# Exercise adding even numbers in the range 1-100
 
-print(f"The highest score in the class is: {highest_score}")
+even_sum = 0
+for i in range(1, 101):
+    if i % 2 == 0:
+        even_sum += i
+
+print(even_sum)
+
+# OR - using step
+
+even_sum2 = 0
+for i in range(2, 101, 2):
+    even_sum2 += i
+
+print(even_sum2)
